@@ -1,229 +1,231 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".tab.RegisterFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ImageView
-        android:id="@+id/login_img_logo"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marge_72"
-        android:layout_marginEnd="@dimen/marge_72"
-        android:paddingTop="@dimen/marge_16"
-        android:src="@drawable/logo_epharma"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".tab.RegisterFragment">
 
-    <TextView
-        android:id="@+id/login_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/register_text"
-        android:textSize="@dimen/text_size_26"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:fontFamily="@font/gravitas_one_regular"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_img_logo" />
+        <ImageView
+            android:id="@+id/login_img_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marge_72"
+            android:layout_marginEnd="@dimen/marge_72"
+            android:paddingTop="@dimen/marge_16"
+            android:src="@drawable/logo_epharma"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/login_ind_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/register_indicate_text"
-        android:textAlignment="center"
-        android:textSize="@dimen/text_size_18"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_text" />
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_text"
+            android:textSize="@dimen/text_size_26"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gravitas_one_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_img_logo" />
 
-    <TextView
-        android:id="@+id/last_name_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marge_16"
-        android:layout_marginTop="@dimen/marge_16"
-        android:text="@string/last_name_text"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:fontFamily="@font/gravitas_one_regular"
-        android:textSize="@dimen/text_size_12"
+        <TextView
+            android:id="@+id/login_ind_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_indicate_text"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_text" />
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_ind_text" />
+        <TextView
+            android:id="@+id/last_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marge_16"
+            android:layout_marginTop="@dimen/marge_16"
+            android:text="@string/last_name_text"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="@font/gravitas_one_regular"
+            android:textSize="@dimen/text_size_12"
 
-    <EditText
-        android:id="@+id/last_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marge_16"
-        android:hint="@string/last_name_hint_text"
-        android:textAlignment="center"
-        android:textSize="@dimen/text_size_16"
-        android:textStyle="italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/last_name_label" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_ind_text" />
 
-    <TextView
-        android:id="@+id/first_name_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marge_16"
-        android:layout_marginTop="@dimen/marge_12"
-        android:text="@string/first_name_text"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:fontFamily="@font/gravitas_one_regular"
-        android:textSize="@dimen/text_size_12"
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marge_16"
+            android:hint="@string/last_name_hint_text"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/last_name_label" />
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/last_name" />
+        <TextView
+            android:id="@+id/first_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marge_16"
+            android:layout_marginTop="@dimen/marge_12"
+            android:text="@string/first_name_text"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="@font/gravitas_one_regular"
+            android:textSize="@dimen/text_size_12"
 
-    <EditText
-        android:id="@+id/first_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marge_16"
-        android:hint="@string/first_name_hint_text"
-        android:textAlignment="center"
-        android:textSize="@dimen/text_size_16"
-        android:textStyle="italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/first_name_label" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/last_name" />
 
-
-    <TextView
-        android:id="@+id/email_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marge_16"
-        android:layout_marginTop="@dimen/marge_12"
-        android:text="@string/email_text"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:fontFamily="@font/gravitas_one_regular"
-        android:textSize="@dimen/text_size_12"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/first_name" />
-
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marge_16"
-        android:hint="@string/email_hint_text"
-        android:textAlignment="center"
-        android:textSize="@dimen/text_size_16"
-        android:textStyle="italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/email_label" />
-
-    <TextView
-        android:id="@+id/password_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marge_16"
-        android:layout_marginTop="@dimen/marge_12"
-        android:text="@string/password_text"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:fontFamily="@font/gravitas_one_regular"
-        android:textSize="@dimen/text_size_12"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/email" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marge_16"
-        android:hint="@string/password_hint_text"
-        android:textAlignment="center"
-        android:textSize="@dimen/text_size_16"
-        android:textStyle="italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password_label" />
-
-    <TextView
-        android:id="@+id/password_label_confirm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marge_16"
-        android:layout_marginTop="@dimen/marge_12"
-        android:text="@string/password_text"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:fontFamily="@font/gravitas_one_regular"
-        android:textSize="@dimen/text_size_12"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password" />
-
-    <EditText
-        android:id="@+id/password_confirm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marge_16"
-        android:hint="@string/password_hint_text_confirm"
-        android:textAlignment="center"
-        android:textSize="@dimen/text_size_16"
-        android:textStyle="italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password_label_confirm" />
-
-    <ProgressBar
-        android:id="@+id/progress_bar"
-        android:layout_width="@dimen/view_size_35"
-        android:layout_height="@dimen/view_size_35"
-        android:layout_marginTop="@dimen/marge_64"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password_confirm"/>
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marge_16"
+            android:hint="@string/first_name_hint_text"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/first_name_label" />
 
 
-    <Button
-        android:id="@+id/login_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marge_72"
-        android:layout_marginEnd="@dimen/marge_72"
-        android:text="@string/register_button_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/progress_bar" />
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marge_16"
+            android:layout_marginTop="@dimen/marge_12"
+            android:text="@string/email_text"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="@font/gravitas_one_regular"
+            android:textSize="@dimen/text_size_12"
 
-    <ImageView
-        android:id="@+id/arrow_right"
-        android:layout_width="@dimen/view_size_35"
-        android:layout_height="@dimen/view_size_35"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/ic_arrow_left"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/swipeLeft"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/first_name" />
 
-    <TextView
-        android:id="@+id/swipeLeft"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:text="@string/text_swipe_left"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marge_16"
+            android:hint="@string/email_hint_text"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email_label" />
+
+        <TextView
+            android:id="@+id/password_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marge_16"
+            android:layout_marginTop="@dimen/marge_12"
+            android:text="@string/password_text"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="@font/gravitas_one_regular"
+            android:textSize="@dimen/text_size_12"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marge_16"
+            android:hint="@string/password_hint_text"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password_label" />
+
+        <TextView
+            android:id="@+id/password_label_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marge_16"
+            android:layout_marginTop="@dimen/marge_12"
+            android:text="@string/password_text"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="@font/gravitas_one_regular"
+            android:textSize="@dimen/text_size_12"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password" />
+
+        <EditText
+            android:id="@+id/password_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marge_16"
+            android:hint="@string/password_hint_text_confirm"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password_label_confirm" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/view_size_35"
+            android:layout_height="@dimen/view_size_35"
+            android:layout_marginTop="@dimen/marge_64"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password_confirm"/>
 
 
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marge_72"
+            android:layout_marginEnd="@dimen/marge_72"
+            android:text="@string/register_button_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progress_bar" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/arrow_right"
+            android:layout_width="@dimen/view_size_35"
+            android:layout_height="@dimen/view_size_35"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_arrow_left"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/swipeLeft"/>
+
+        <TextView
+            android:id="@+id/swipeLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="@string/text_swipe_left"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -4,6 +4,9 @@ plugins {
 
 android {
     compileSdk 32
+    dataBinding {
+        enabled  true
+    }
 
     defaultConfig {
         applicationId "com.example.epharma_inf1030_h22_g3"
