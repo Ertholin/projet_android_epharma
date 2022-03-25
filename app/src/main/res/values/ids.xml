@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="last_name_label" type="id" />
+    <item name="last_name" type="id" />
+    <item name="first_name_label" type="id" />
+    <item name="first_name" type="id" />
+    <item name="password_label_confirm" type="id" />
+    <item name="password_confirm" type="id" />
+    <item name="frag_container" type="id" />
+</resources>

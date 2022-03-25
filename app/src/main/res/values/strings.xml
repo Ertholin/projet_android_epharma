@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">EpharmaGroupe3</string>
+    <string name="welcome_">Bienvenue</string>
+    <string name="welcome_text">Votre solution Pharmaceutique</string>
+    <string name="login_text">Connectez-vous</string>
+    <string name="login_indicate_text">Connectez-vous à votre compte pour pouvoir faire votre réservation</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="email_hint_text">Saisir votre email</string>
+    <string name="password_hint_text">Saisir votre mot de passe</string>
+    <string name="login_button_text">Connecter</string>
+    <string name="login_forgot_id">Mot de passe oublié ? Cliquez ici</string>
+    <string name="last_name_text">Nom</string>
+    <string name="register_indicate_text">Connectez-vous à votre compte pour pouvoir faire votre réservation</string>
+    <string name="register_text">Créer un compte</string>
+    <string name="last_name_hint_text">Saisir votre nom</string>
+    <string name="first_name_text">Prénom</string>
+    <string name="first_name_hint_text">Saisir votre nom</string>
+    <string name="password_hint_text_confirm">Confrmer votre mot de passe</string>
+    <string name="register_button_text">Envoyer</string>
+    <string name="text_swipe_right">Cliquez ici pour créer un compte</string>
+    <string name="text_swipe_left">Cliquez ici se connecter</string>
+</resources>

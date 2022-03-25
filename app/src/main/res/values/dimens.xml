@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="marge_4">4dp</dimen>
+    <dimen name="marge_8">8dp</dimen>
+    <dimen name="marge_12">12dp</dimen>
+    <dimen name="marge_16">16dp</dimen>
+    <dimen name="marge_24">24dp</dimen>
+    <dimen name="marge_28">28dp</dimen>
+    <dimen name="marge_32">32dp</dimen>
+    <dimen name="marge_48">48dp</dimen>
+    <dimen name="marge_64">64dp</dimen>
+    <dimen name="marge_66">66dp</dimen>
+    <dimen name="marge_72">72dp</dimen>
+    <dimen name="marge_136">136dp</dimen>
+
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_26">26sp</dimen>
+    <dimen name="text_size_32">32sp</dimen>
+
+    <dimen name="view_size_25">25dp</dimen>
+    <dimen name="view_size_35">35dp</dimen>
+    <dimen name="view_size_40">40dp</dimen>
+    <dimen name="view_size_44">44dp</dimen>
+    <dimen name="view_size_48dp">48dp</dimen>
+    <dimen name="view_size_72dp">72dp</dimen>
+    <dimen name="view_size_100">100dp</dimen>
+    <dimen name="emoji_size_28">28dp</dimen>
+    <dimen name="edit_text_max_heigth">124dp</dimen>
+    <dimen name="illustration_width">268dp</dimen>
+    <dimen name="illustration_size_height">272dp</dimen>
+
+</resources>
