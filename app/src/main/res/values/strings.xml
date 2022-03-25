@@ -20,4 +20,8 @@
     <string name="register_button_text">Envoyer</string>
     <string name="text_swipe_right">Cliquez ici pour créer un compte</string>
     <string name="text_swipe_left">Cliquez ici se connecter</string>
+    <string name="accueil">Accueil</string>
+    <string name="panier">Panier</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
