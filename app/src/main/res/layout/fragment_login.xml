@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/marge_72"
             android:layout_marginEnd="@dimen/marge_72"
-            android:paddingTop="@dimen/marge_72"
+            android:paddingTop="@dimen/marge_24"
             android:src="@drawable/logo_epharma"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -44,7 +44,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/login_text" />
-
 
         <TextView
             android:id="@+id/email_label"
@@ -94,7 +93,6 @@
             android:hint="@string/password_hint_text"
             android:textAlignment="center"
             android:textSize="@dimen/text_size_16"
-
             android:textStyle="italic"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/password_label" />
@@ -108,7 +106,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/password"/>
-
 
         <Button
             android:id="@+id/login_button"
@@ -150,13 +147,12 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="@dimen/marge_64"
             android:text="@string/text_swipe_right"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

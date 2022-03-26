@@ -32,5 +32,6 @@
     <dimen name="edit_text_max_heigth">124dp</dimen>
     <dimen name="illustration_width">268dp</dimen>
     <dimen name="illustration_size_height">272dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 
 </resources>
