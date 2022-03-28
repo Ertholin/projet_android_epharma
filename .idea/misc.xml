@@ -8,9 +8,10 @@
         <entry key="..\:/Bureau/programmation/android_epharma/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Bureau/programmation/android_epharma/app/src/main/res/layout/activity_welcome_screen.xml" value="0.1" />
         <entry key="..\:/Bureau/programmation/android_epharma/app/src/main/res/layout/fragment_item.xml" value="0.3333333333333333" />
-        <entry key="..\:/Bureau/programmation/android_epharma/app/src/main/res/layout/fragment_item_list.xml" value="0.3333333333333333" />
-        <entry key="..\:/Bureau/programmation/android_epharma/app/src/main/res/layout/fragment_login.xml" value="0.3333333333333333" />
+        <entry key="..\:/Bureau/programmation/android_epharma/app/src/main/res/layout/fragment_item_list.xml" value="0.22" />
+        <entry key="..\:/Bureau/programmation/android_epharma/app/src/main/res/layout/fragment_login.xml" value="0.1" />
         <entry key="..\:/Bureau/programmation/android_epharma/app/src/main/res/layout/fragment_register.xml" value="0.22" />
+        <entry key="..\:/Bureau/programmation/android_epharma/app/src/main/res/layout/medicament_fragment.xml" value="0.1546875" />
         <entry key="..\:/Bureau/programmation/android_epharma/app/src/main/res/menu/main_menu.xml" value="0.16666666666666666" />
         <entry key="..\:/Bureau/programmation/android_epharma/app/src/main/res/menu/menu_main.xml" value="0.14270833333333333" />
         <entry key="..\:/Bureau/programmation/app/src/main/res/drawable-v24/add_msg_background.xml" value="0.1" />

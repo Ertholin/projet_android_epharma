@@ -11,6 +11,7 @@ import android.view.View;
 
 import com.example.epharma_inf1030_h22_g3.databinding.ActivityMainBinding;
 import com.example.epharma_inf1030_h22_g3.tab.LoginFragment;
+import com.example.epharma_inf1030_h22_g3.tab.MedicamentFragment;
 import com.example.epharma_inf1030_h22_g3.tab.RegisterFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -37,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.menu_home:
                 RegisterFragment rf = new RegisterFragment();
                 transaction.replace(R.id.flFragment, rf, "Register");
+                transaction.commit();
+                break;
+
+            case R.id.menu_shopping:
+                MedicamentFragment mf = new MedicamentFragment();
+                transaction.replace(R.id.flFragment, mf, "Medicament");
                 transaction.commit();
                 break;
         }

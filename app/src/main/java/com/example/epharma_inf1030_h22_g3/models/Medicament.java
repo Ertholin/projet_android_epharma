@@ -1,11 +1,16 @@
 package com.example.epharma_inf1030_h22_g3.models;
 
+import androidx.annotation.NonNull;
 import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 @Entity()
 public class Medicament extends Auditable{
 
     private Long catnumber;
+
+    @NonNull
+    @PrimaryKey
     private Long drugnumber;
     private String dci;
     private String dosage;
@@ -20,12 +25,10 @@ public class Medicament extends Auditable{
     private String createdBy;
     private String lastUpdatedBy;
     private boolean status;
+//    private String imageKey;
 
-    public Medicament(String dci, String dosage, String form, String reference) {
-        this.dci = dci;
-        this.dosage = dosage;
-        this.form = form;
-        this.reference = reference;
+    public Medicament() {
+
     }
 
     public Long getCatnumber() {
