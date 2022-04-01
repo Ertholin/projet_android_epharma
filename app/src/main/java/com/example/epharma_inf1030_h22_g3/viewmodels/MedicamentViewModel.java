@@ -2,6 +2,7 @@ package com.example.epharma_inf1030_h22_g3.viewmodels;
 
 import android.app.Application;
 
+import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
@@ -22,10 +23,6 @@ public class MedicamentViewModel extends AndroidViewModel {
         repo = new MedicamentRepository(application);
     }
 
-    public void getAsyncAll(Consumer<List<Medicament>> callback){
-        repo.getAsyncAll(callback);
-    }
-
     public LiveData<List<Medicament>> liveAll(){
         if(medicaments == null){
             medicaments = repo.liveAll();
@@ -33,10 +30,15 @@ public class MedicamentViewModel extends AndroidViewModel {
         return medicaments;
     }
 
+    public void getAsyncAll(Consumer<List<Medicament>> callback){
+        repo.getAsyncAll(callback);
+    }
+
+
     public void save(Medicament medicament, Runnable completion){
+        repo.insert(completion, medicament);
         medicament.setUpdated(LocalDateTime.now());
         medicament.setNeedUpdate(true);
-        repo.insert(completion, medicament);
     }
 
     public Medicament getCurrentMedicament(){

@@ -28,7 +28,6 @@ public class Medicament extends Auditable{
 //    private String imageKey;
 
     public Medicament() {
-
     }
 
     public Long getCatnumber() {

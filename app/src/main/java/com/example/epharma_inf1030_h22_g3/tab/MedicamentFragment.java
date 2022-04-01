@@ -45,11 +45,21 @@ public class MedicamentFragment extends Fragment {
     public void onViewCreated(@NonNull View view,
                               @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
         adapter = new MyMedicamentFragmentRecyclerViewAdapter(getContext());
-        binder.list.setAdapter(adapter);
+        //binder.list.setAdapter(adapter);
 
         model = new ViewModelProvider(getActivity())
                 .get(MedicamentViewModel.class);
+        //mWordViewModel = new ViewModelProvider(this).get(WordViewModel.class);
+
+
+        // old code
+        //mWordViewModel = new ViewModelProvider(this).get(WordViewModel.class);
+        // new code
+        //model = new ViewModelProvider(this, ViewModelProvider.AndroidViewModelFactory.getInstance(getApplication())).get(MedicamentViewModel.class);
+        binder.list.setAdapter(adapter);
+        
         model.liveAll().observe(getViewLifecycleOwner(), list->{
             list.forEach(adapter::addItems);
         });

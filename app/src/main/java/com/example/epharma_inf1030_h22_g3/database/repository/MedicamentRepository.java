@@ -15,8 +15,9 @@ import java.util.function.Consumer;
 
 public class MedicamentRepository {
 
-    private final MedicamentDAO dao;
-    private final EphApp app;
+    private MedicamentDAO dao;
+    private LiveData<List<Medicament>> medicaments;
+    private EphApp app;
 
     public MedicamentRepository(Application context){
         app = (EphApp) context;
@@ -35,12 +36,15 @@ public class MedicamentRepository {
     }
 
     public LiveData<List<Medicament>> liveAll(){
-        return  dao.getLiveAll();
+        if(medicaments == null){
+            medicaments = dao.getLiveAll();
+        }
+        return medicaments;
     }
 
-    public LiveData<Medicament>live(String uuid){
-        return  dao.getLive(uuid);
-    }
+//    public LiveData<Medicament>live(String uuid){
+//        return  dao.getLive(uuid);
+//    }
 
     public void insert(Medicament... medicaments) {
         insert(null, medicaments);

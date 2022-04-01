@@ -49,12 +49,6 @@ dependencies {
     def multidex_version = "2.0.1"
     implementation "androidx.multidex:multidex:$multidex_version"
 
-
-
-
-
-
-
 //    implementation "androidx.room:room-runtime:$room_version"
 //    annotationProcessor "androidx.room:room-compiler:$room_version"
 //    // optional - RxJava2 support for Room
@@ -66,7 +60,7 @@ dependencies {
 //    // optional - Test helpers
 //    testImplementation "androidx.room:room-testing:$room_version"
 //    // optional - Paging 3 Integration
-//    implementation "androidx.room:room-paging:2.4.0-beta01"
+//    implementation "androidx.room:room-paging:2.5.0-alpha01"
 //    implementation "org.mindrot:jbcrypt:0.4"
 
 }
